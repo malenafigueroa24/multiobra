@@ -1,0 +1,311 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Multiobra - Construcción y Reformas en Córdoba</title>
+  
+  <!-- Íconos de FontAwesome -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+  
+  <!-- Estilos CSS -->
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <!-- BARRA DE NAVEGACIÓN -->
+  <header>
+    <div class="nav-container">
+      <div class="logo">Mult<span>iobra</span></div>
+      <nav>
+        <ul>
+          <li><a href="#inicio" class="active">Inicio</a></li>
+          <li><a href="#servicios">Servicios</a></li>
+          <li><a href="#trabajos">Trabajos</a></li>
+          <li><a href="#precios">Precios</a></li>
+          <li><a href="#nosotros">Nosotros</a></li>
+          <li><a href="#contacto">Contacto</a></li>
+        </ul>
+      </nav>
+      <button class="btn btn-red" onclick="solicitarPresupuesto('General')">
+        <i class="fa-regular fa-paper-plane"></i> Solicitar presupuesto
+      </button>
+    </div>
+  </header>
+
+  <!-- HERO SECTION -->
+  <section id="inicio" class="hero">
+    <div class="hero-container">
+      <div>
+        <div class="hero-subtitle">Construcción y Reformas en Córdoba</div>
+        <h1 class="hero-title">Construimos tus ideas.<br>Transformamos tus <span>espacios.</span></h1>
+        <p class="hero-desc">Albañilería, pisos, revoques y reformas. Soluciones a medida, con calidad, compromiso y experiencia.</p>
+        <div class="hero-buttons">
+          <button class="btn btn-red" onclick="solicitarPresupuesto('General')">Solicitar presupuesto</button>
+          <button class="btn btn-outline" onclick="scrollToSection('trabajos')">Ver trabajos <i class="fa-solid fa-arrow-right"></i></button>
+        </div>
+      </div>
+      
+      <div class="hero-features">
+        <div class="feature-item">
+          <div class="feature-icon"><i class="fa-solid fa-shield-halved"></i></div>
+          <div>
+            <strong>Experiencia</strong>
+            <p style="font-size: 0.8rem; color: #aaa;">Profesionales calificados</p>
+          </div>
+        </div>
+        <div class="feature-item">
+          <div class="feature-icon"><i class="fa-solid fa-award"></i></div>
+          <div>
+            <strong>Calidad</strong>
+            <p style="font-size: 0.8rem; color: #aaa;">Garantía en cada proyecto</p>
+          </div>
+        </div>
+        <div class="feature-item">
+          <div class="feature-icon"><i class="fa-solid fa-handshake"></i></div>
+          <div>
+            <strong>Compromiso</strong>
+            <p style="font-size: 0.8rem; color: #aaa;">Cumplimiento en tiempos</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- SERVICIOS -->
+  <section id="servicios" class="section-padding" style="max-width: 1200px; margin: 0 auto;">
+    <div class="section-header">
+      <div class="section-title-wrapper">
+        <div class="sub">Nuestros Servicios</div>
+        <h2>Soluciones para cada proyecto</h2>
+      </div>
+      <button class="btn btn-outline-dark" onclick="scrollToSection('contacto')">Ver todos los servicios <i class="fa-solid fa-arrow-right"></i></button>
+    </div>
+
+    <div class="services-grid">
+      <div class="service-card">
+        <div class="service-card-img" style="background-image: url('https://images.unsplash.com/photo-1581094794329-c8112a89af12?auto=format&fit=crop&w=500&q=80');">
+          <div class="icon-badge"><i class="fa-solid fa-cubes"></i></div>
+        </div>
+        <div class="service-card-content">
+          <h3>Albañilería</h3>
+          <p>Construcción general, arreglos estructurales y paredes de todo tipo.</p>
+        </div>
+      </div>
+
+      <div class="service-card">
+        <div class="service-card-img" style="background-image: url('https://images.unsplash.com/photo-1581858726788-75bc0f6a952d?auto=format&fit=crop&w=500&q=80');">
+          <div class="icon-badge"><i class="fa-solid fa-border-all"></i></div>
+        </div>
+        <div class="service-card-content">
+          <h3>Colocación de pisos</h3>
+          <p>Cerámicos, porcelanatos, revestimientos y zócalos.</p>
+        </div>
+      </div>
+
+      <div class="service-card">
+        <div class="service-card-img" style="background-image: url('https://images.unsplash.com/photo-1504307651254-35680f356dfd?auto=format&fit=crop&w=500&q=80');">
+          <div class="icon-badge"><i class="fa-solid fa-paint-roller"></i></div>
+        </div>
+        <div class="service-card-content">
+          <h3>Revoques y terminaciones</h3>
+          <p>Revoques finos, gruesos y acabados de primera calidad.</p>
+        </div>
+      </div>
+
+      <div class="service-card">
+        <div class="service-card-img" style="background-image: url('https://images.unsplash.com/photo-1618221195710-dd6b41faaea6?auto=format&fit=crop&w=500&q=80');">
+          <div class="icon-badge"><i class="fa-solid fa-house-chimney"></i></div>
+        </div>
+        <div class="service-card-content">
+          <h3>Reformas Integrales</h3>
+          <p>Renovación completa de viviendas, oficinas o ambientes específicos.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- TRABAJOS -->
+  <section id="trabajos" class="section-padding bg-dark-section">
+    <div style="max-width: 1200px; margin: 0 auto;">
+      <div class="section-header">
+        <div class="section-title-wrapper">
+          <div class="sub">Nuestros Trabajos</div>
+          <h2>Proyectos que hablan por sí solos</h2>
+        </div>
+        <button class="btn btn-outline" style="border-color: #444;" onclick="alert('Cargando más trabajos...')">Ver más trabajos <i class="fa-solid fa-arrow-right"></i></button>
+      </div>
+
+      <div class="projects-grid">
+        <div class="project-card" style="background-image: url('https://images.unsplash.com/photo-1600585154340-be6161a56a0c?auto=format&fit=crop&w=500&q=80');">
+          <div class="project-overlay">
+            <h4>Casa Guiñazú — Córdoba</h4>
+          </div>
+        </div>
+        <div class="project-card" style="background-image: url('https://images.unsplash.com/photo-1584622650111-993a426fbf0a?auto=format&fit=crop&w=500&q=80');">
+          <div class="project-overlay">
+            <h4>Baño completo — Córdoba</h4>
+          </div>
+        </div>
+        <div class="project-card" style="background-image: url('https://images.unsplash.com/photo-1513694203232-719a280e022f?auto=format&fit=crop&w=500&q=80');">
+          <div class="project-overlay">
+            <h4>Ampliación — Córdoba</h4>
+          </div>
+        </div>
+        <div class="project-card" style="background-image: url('https://images.unsplash.com/photo-1600566753376-12c8ab7fb75b?auto=format&fit=crop&w=500&q=80');">
+          <div class="project-overlay">
+            <h4>Reforma integral — Córdoba</h4>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- PRECIOS -->
+  <section id="precios" class="section-padding" style="max-width: 1200px; margin: 0 auto;">
+    <div class="prices-container">
+      
+      <div class="price-banner">
+        <div>
+          <span class="tag">OFERTAS</span>
+          <h3 style="font-size: 1.5rem; margin-bottom: 10px;">Nuestros precios</h3>
+          <p style="font-size: 0.85rem; color: #ddd;">Calidad, experiencia y precios justos para dar presupuesto de tu proyecto.</p>
+          <ul>
+            <li><i class="fa-solid fa-check" style="color: var(--primary-red);"></i> Transparencia de costos</li>
+            <li><i class="fa-solid fa-check" style="color: var(--primary-red);"></i> Materiales de primera calidad</li>
+            <li><i class="fa-solid fa-check" style="color: var(--primary-red);"></i> Cuotas y medios de pago</li>
+            <li><i class="fa-solid fa-check" style="color: var(--primary-red);"></i> Presupuesto personalizado</li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="price-grid">
+        <div class="price-card">
+          <div class="price-card-img" style="background-image: url('https://images.unsplash.com/photo-1584622650111-993a426fbf0a?auto=format&fit=crop&w=400&q=80');"></div>
+          <div class="price-card-body">
+            <div>
+              <h4>Baños</h4>
+              <p>Reforma y remozado de baños en general.</p>
+            </div>
+            <div>
+              <div class="price-val">Desde $400.000</div>
+              <button class="btn btn-red" style="width: 100%; justify-content: center;" onclick="solicitarPresupuesto('Reforma de Baño')">Solicitar</button>
+            </div>
+          </div>
+        </div>
+
+        <div class="price-card">
+          <div class="price-card-img" style="background-image: url('https://images.unsplash.com/photo-1556911220-e15b29be8c8f?auto=format&fit=crop&w=400&q=80');"></div>
+          <div class="price-card-body">
+            <div>
+              <h4>Cocinas</h4>
+              <p>Muebles, mesadas y readecuación de cañerías.</p>
+            </div>
+            <div>
+              <div class="price-val">Desde $500.000</div>
+              <button class="btn btn-red" style="width: 100%; justify-content: center;" onclick="solicitarPresupuesto('Reforma de Cocina')">Solicitar</button>
+            </div>
+          </div>
+        </div>
+
+        <div class="price-card">
+          <div class="price-card-img" style="background-image: url('https://images.unsplash.com/photo-1581858726788-75bc0f6a952d?auto=format&fit=crop&w=400&q=80');"></div>
+          <div class="price-card-body">
+            <div>
+              <h4>Pisos</h4>
+              <p>Colocación de cerámicos, porcelanatos o m².</p>
+            </div>
+            <div>
+              <div class="price-val">Desde $3.000 /m²</div>
+              <button class="btn btn-red" style="width: 100%; justify-content: center;" onclick="solicitarPresupuesto('Colocación de Pisos')">Solicitar</button>
+            </div>
+          </div>
+        </div>
+
+        <div class="price-card">
+          <div class="price-card-img" style="background-image: url('https://images.unsplash.com/photo-1618221195710-dd6b41faaea6?auto=format&fit=crop&w=400&q=80');"></div>
+          <div class="price-card-body">
+            <div>
+              <h4>Reformas completas</h4>
+              <p>Renovación completa de casas y comercios.</p>
+            </div>
+            <div>
+              <div class="price-val">Desde $8.000 /m²</div>
+              <button class="btn btn-red" style="width: 100%; justify-content: center;" onclick="solicitarPresupuesto('Reforma Completa')">Solicitar</button>
+            </div>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- TESTIMONIOS -->
+  <section id="nosotros" class="section-padding" style="max-width: 1200px; margin: 0 auto;">
+    <div class="section-title-wrapper" style="margin-bottom: 30px;">
+      <div class="sub">Lo que dicen nuestros clientes</div>
+      <h2>La confianza de nuestros clientes es nuestro mayor logro</h2>
+    </div>
+
+    <div class="testimonials-grid">
+      <div class="testimonial-card">
+        <p>"Excelente trabajo, muy responsables y puntuales. Cumplieron con todos los plazos estipulados y el baño quedó espectacular."</p>
+        <div class="testimonial-user">
+          <div class="testimonial-avatar"></div>
+          <div>
+            <strong>Esteban R.</strong> <br>
+            <span style="font-size: 0.75rem; color: var(--primary-red);">Cliente verificado</span>
+          </div>
+        </div>
+      </div>
+
+      <div class="testimonial-card">
+        <p>"Recomendados 100%. Hicieron la reforma del local y el acabado en porcelanato quedó imponente. Muy prolijos."</p>
+        <div class="testimonial-user">
+          <div class="testimonial-avatar"></div>
+          <div>
+            <strong>Alejandro P.</strong> <br>
+            <span style="font-size: 0.75rem; color: var(--primary-red);">Cliente verificado</span>
+          </div>
+        </div>
+      </div>
+
+      <div class="testimonial-card">
+        <p>"Trabajo prolijo y con muy buenas terminaciones. Sin dudas volvería a contratar para un próximo proyecto."</p>
+        <div class="testimonial-user">
+          <div class="testimonial-avatar"></div>
+          <div>
+            <strong>Diego L.</strong> <br>
+            <span style="font-size: 0.75rem; color: var(--primary-red);">Cliente verificado</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- BANNER CONTACTO / WHATSAPP -->
+  <section id="contacto" class="whatsapp-banner">
+    <h3>¿Tenés un proyecto en mente?</h3>
+    <p style="color: #aaa; margin-top: 5px;">Escribinos y te asesoramos sin compromiso.</p>
+    <a href="#" onclick="solicitarPresupuesto('Consulta General')" class="btn btn-whatsapp" style="display: inline-block;">
+      <i class="fa-brands fa-whatsapp"></i> Hablanos por WhatsApp
+    </a>
+  </section>
+
+  <!-- FOOTER -->
+  <footer>
+    <div class="footer-container">
+      <div class="logo" style="font-size: 1.2rem;">Mult<span>iobra</span></div>
+      <div>&copy; 2026 Multiobra. Todos los derechos reservados.</div>
+      <div class="footer-socials">
+        <a href="#"><i class="fa-brands fa-instagram"></i></a>
+        <a href="#"><i class="fa-brands fa-facebook"></i></a>
+        <a href="#"><i class="fa-brands fa-whatsapp"></i></a>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Archivo JavaScript -->
+  <script src="script.js"></script>
+</body>
+</html>
